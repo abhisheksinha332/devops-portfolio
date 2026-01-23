@@ -1,0 +1,65 @@
+<!-- AS monogram with infinity loop (clean, scalable, and editable) -->
+<svg width="512" height="256" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AS logo with infinity loop">
+  <defs>
+    <!-- Colors -->
+    <linearGradient id="gray" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2F3A45"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <!-- Subtle shadow for depth -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background (transparent) -->
+  <rect x="0" y="0" width="512" height="256" fill="none"/>
+
+  <!-- Infinity loop: left (gray arrow) -->
+  <g filter="url(#softShadow)">
+    <path d="
+      M 64,128
+      C 64,80 104,48 152,48
+      C 196,48 228,76 256,104
+      C 284,76 316,48 360,48
+      C 408,48 448,80 448,128
+      C 448,176 408,208 360,208
+      C 316,208 284,180 256,152
+      C 228,180 196,208 152,208
+      C 104,208 64,176 64,128
+      Z"
+      fill="none" stroke="url(#gray)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Left arrowhead -->
+    <path d="M 78,128 L 54,116 L 54,140 Z" fill="url(#gray)"/>
+  </g>
+
+  <!-- Infinity loop: right (blue arrow) -->
+  <g filter="url(#softShadow)">
+    <path d="
+      M 448,128
+      C 448,80 408,48 360,48
+      C 316,48 284,76 256,104
+      C 228,76 196,48 152,48
+      C 104,48 64,80 64,128
+      C 64,176 104,208 152,208
+      C 196,208 228,180 256,152
+      C 284,180 316,208 360,208
+      C 408,208 448,176 448,128
+      Z"
+      fill="none" stroke="url(#blue)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right arrowhead -->
+    <path d="M 434,128 L 458,116 L 458,140 Z" fill="url(#blue)"/>
+  </g>
+
+  <!-- AS letters (centered, bold, geometric) -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="700" fill="#111827">
+    <!-- A -->
+    <text x="206" y="142" font-size="84" letter-spacing="1">A</text>
+    <!-- S -->
+    <text x="268" y="142" font-size="84" letter-spacing="1">S</text>
+  </g>
+</svg>
