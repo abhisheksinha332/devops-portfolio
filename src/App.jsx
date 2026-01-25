@@ -11,7 +11,6 @@ import Certifications from './sections/Certifications';
 import Appreciations from './sections/Appreciations';
 import ContactPage from './sections/ContactPage';
 import Footer from './sections/Footer';
-import AlertDialogSlide from './components/AlertDialogSlide';
 
 
 import { AnimatePresence } from "framer-motion";
@@ -43,7 +42,7 @@ function App() {
          <Appreciations />
          <ContactPage />
          <Footer />
-         <AlertDialogSlide />
+       
       </div>}
     </AnimatePresence>
   )
