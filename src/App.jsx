@@ -9,7 +9,6 @@ import Projects from './sections/Projects';
 import ScrollProgress from './components/ScrollProgress';
 import Certifications from './sections/Certifications';
 import Appreciations from './sections/Appreciations';
-import Contact from './sections/Contact';
 import ContactPage from './sections/ContactPage';
 import Footer from './sections/Footer';
 
@@ -42,7 +41,6 @@ function App() {
          <Certifications />
          <Appreciations />
          <ContactPage />
-    
          <Footer />
          
       </div>}

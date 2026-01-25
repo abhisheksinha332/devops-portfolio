@@ -12,7 +12,7 @@ const ScrollProgress = () => {
         left: 0,
         width: "100%",
         height: 3,
-        zIndex: 2000,
+        zIndex: 100,
         backgroundColor: "rgba(148,163,184,0.15)"
       }}
     >

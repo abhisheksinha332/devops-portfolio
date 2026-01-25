@@ -105,7 +105,8 @@ export default function Navbar() {
           "& .MuiDrawer-paper": {
             width: 260,
             backgroundColor: "#0F172A",
-            color: "#fff"
+            color: "#fff",
+            zIndex: 13000
           }
         }}
       >
