@@ -1,11 +1,29 @@
+import * as React from 'react';
 import { useState, useEffect, useRef } from "react";
-import { Box, Container ,Typography, Paper, Grid, TextField, Button } from "@mui/material";
+import { Box, Container ,Typography, Divider,   Paper, Grid, TextField, Button } from "@mui/material";
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Slide from '@mui/material/Slide';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import emailjs from '@emailjs/browser';
+import { color } from 'framer-motion';
+
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const ContactPage = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [open, setOpen] = React.useState(false);
+
+    const handleClose = () => {
+    setOpen(false);
+  };
       const [form, setForm] = useState({
         name: "",
         email: "",
@@ -35,6 +53,7 @@ const ContactPage = () => {
               .then(
                 () => {
                   console.log('SUCCESS!');
+                  setOpen(true);
                 },
                 (error) => {
                   console.log('FAILED...', error);
@@ -53,7 +72,7 @@ const ContactPage = () => {
         <Box
       id="contact"
       sx={{
-        minHeight: "100vh",
+        minHeight: "65vh",
         display: "flex",
         alignItems: "center"
       }}
@@ -87,12 +106,35 @@ const ContactPage = () => {
 
             </Grid>
             <Grid item xs={12} md={6} sx={{ display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: "100%", maxWidth: 500 }}>
-                    <TextField fullWidth label="Your Name" variant="outlined" margin="normal" sx={inputStyle} />
-                    <TextField fullWidth label="Email Address" variant="outlined" margin="normal" sx={inputStyle} />
-                    <TextField fullWidth label="Message" variant="outlined" margin="normal" multiline rows={4} sx={inputStyle} />
-                    <Button type="submit" variant="contained" size="large" sx={{ mt: 1, fontWeight: 600 }}>{isSubmitted ?"Sending" : "Send Message"}</Button>
+                <Box component="form" onSubmit={handleSubmit} sx={{ width: "100%", maxWidth: 500 }} ref={formRef}>
+                    <TextField fullWidth label="Your Name" name="name" value={form.name} variant="outlined" onChange={handleChange} margin="normal" sx={inputStyle} />
+                    <TextField fullWidth label="Email Address" name="email" value={form.email} variant="outlined" onChange={handleChange} margin="normal" sx={inputStyle} />
+                    <TextField fullWidth label="Message" name="message" value={form.message} variant="outlined" onChange={handleChange} margin="normal" multiline rows={4} sx={inputStyle} />
+                    <Button type="submit" fullWidth variant="contained" size="large" sx={{ mt: 1, fontWeight: 600 }}>{isSubmitted ? "Sending" : "Send Message"}</Button>
+                 <Dialog
+                    open={open}
+                    slots={{
+                    transition: Transition,
+                    }}
+                    keepMounted
+                    onClose={handleClose}
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogTitle sx={{color: "black"}}>{"Message sent successfully"}</DialogTitle>
+                    <DialogContent>
+                    <DialogContentText id="alert-dialog-slide-description">
+                        Your message has been sent successfully! I will get back to you soon.
+                    </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                    <Button onClick={handleClose}>Close</Button>
+
+                    </DialogActions>
+      </Dialog>
                 </Box>
+                
+               
+
             </Grid>
 
             </Grid>
