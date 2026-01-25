@@ -10,7 +10,9 @@ import ScrollProgress from './components/ScrollProgress';
 import Certifications from './sections/Certifications';
 import Appreciations from './sections/Appreciations';
 import Contact from './sections/Contact';
+import ContactPage from './sections/ContactPage';
 import Footer from './sections/Footer';
+
 
 import { AnimatePresence } from "framer-motion";
 import CICDPreloader from "./components/CICDPreloader";
@@ -39,8 +41,10 @@ function App() {
          <Projects />
          <Certifications />
          <Appreciations />
-         <Contact />
+         <ContactPage />
+    
          <Footer />
+         
       </div>}
     </AnimatePresence>
   )

@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import XIcon from "@mui/icons-material/X"; // Twitter (X)
+import XIcon from "@mui/icons-material/X"; 
 
 
 const Contact = () => {
