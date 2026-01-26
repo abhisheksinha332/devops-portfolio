@@ -64,7 +64,7 @@ const Footer = () => {
           {/* Text */}
           <Typography
             variant="body2"
-            sx={{ color: "#94A3B8", mt: 1 }}s
+            sx={{ color: "#94A3B8", mt: 1 }}
           >
             © {new Date().getFullYear()} Made with ❤️ by Abhishek Sinha.
           </Typography>

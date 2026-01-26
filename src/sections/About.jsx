@@ -29,11 +29,6 @@ const About = () => {
                 showMobileWarning={false}
                 showTooltip={false}
                 displayOverlayContent={true}
-//   overlayContent={
-//     <p className="tilted-card-demo-text">
-//       Abhishek Sinha
-//     </p>
-//   }
         />
         </Grid>
           
@@ -46,7 +41,6 @@ const About = () => {
                 Let me introduce myself
               </Typography>
 
-             
               <Typography
                 sx={{
                   mt: 3,
@@ -60,7 +54,6 @@ const About = () => {
                 <br /><br />
                 I am passionate about building secure, scalable, and automated cloud platforms for enterprise environments.
               </Typography>
-
          
             </Box>
           </Grid>

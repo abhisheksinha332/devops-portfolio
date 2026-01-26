@@ -1,31 +1,9 @@
 import {Box,Container,Typography,Paper,Stack,IconButton} from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import myCertifications from "../components/Data/certifications.json";
 
 import { motion } from "framer-motion";
-// import CertImage1 from "../assets/az900.svg";
-// import CertImage2 from "../assets/az104.svg";
 
-const myCertifications = [
-  {
-    title: "AZ-900: Microsoft Certified: Azure Fundamentals",
-    points: ["Cloud Concepts", "Azure architecture and services", "Core solutions and management tools on Azure", "Azure management and governance", "Identity, governance, privacy, and compliance features"],
-    image: "/certificationsImg/az900.svg",
-    
-    verifyLink: "https://learn.microsoft.com/api/credentials/share/en-us/AbhishekSinha-7533/687EF3FCE3A235CA?sharingId=2074A778E8588350",
-    issuer: "Microsoft",
-    year: "2023",
-    color: "#3B82F6"
-  },
-  {
-    title: "AZ-104: Microsoft Certified: Azure Administrator Associate",
-    points: ["Manage Azure identities and governance", "Implement and manage storage", "Deploy and manage Azure compute resources", "Implement and manage virtual networking", "Monitor and maintain Azure resources"],
-    image: "/certificationsImg/az104.svg",
-    verifyLink: "https://learn.microsoft.com/api/credentials/share/en-us/AbhishekSinha-7533/126A802988A6FC53?sharingId=2074A778E8588350",
-    issuer: "Microsoft",
-    year: "2025",
-    color: "#3B82F6"
-  }
-];
 
 const Certifications = () => {
   return (

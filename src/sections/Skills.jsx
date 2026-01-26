@@ -1,29 +1,8 @@
 import { Box, Container, Grid, Typography, Paper, Stack } from "@mui/material";
 import { motion } from "framer-motion";
+import skills from "../components/Data/skills.json";
 
 
-const skills = [
-  {
-    title: "Cloud Platforms",
-    items: ["Azure", "AWS"]
-  },
-  {
-    title: "CI/CD & DevOps",
-    items: ["Azure DevOps", "GitHub Actions", "YAML Pipelines"]
-  },
-  {
-    title: "Containers",
-    items: ["Docker", "Kubernetes", "Service Fabric"]
-  },
-  {
-    title: "Infra as Code",
-    items: ["Terraform", "ARM Templates", "Bicep"]
-  },
-  {
-    title: "Monitoring",
-    items: ["Azure Monitor", "Prometheus", "Grafana"]
-  }
-];
 
 export default function Skills() {
   return (
