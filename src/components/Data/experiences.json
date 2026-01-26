@@ -1,0 +1,38 @@
+
+
+[
+  {
+    "role": "DevOps Engineer",
+    "company": "Bosch",
+    "duration": "2023 – Present",
+    "description": [
+      "Designed and maintained CI/CD pipelines using Azure DevOps and GitHub Actions",
+      "Automated cloud infrastructure using Terraform and ARM templates",
+      "Implemented monitoring with Azure Monitor, Prometheus, and Grafana",
+      "Collaborated with Microsoft team for Renault–Nissan Alliance (MCVP)"
+    ],
+    "tech": ["Azure", "AWS", "Terraform", "Docker", "Kubernetes"]
+  },
+  {
+    "role": "Monitoring & Incident Engineer",
+    "company": "Bosch",
+    "duration": "2022 – 2023",
+    "description": [
+      "Handled production incidents with SLA adherence",
+      "Improved alerting and dashboards",
+      "Performed root cause analysis and post-incident reviews"
+    ],
+    "tech": ["Azure Monitor", "Azure Function", "Azure Automation Account"]
+  },
+  {
+    "role": "IoT Developer Intern",
+    "company": "Bosch",
+    "duration": "2022",
+    "description": [
+      "Handled production incidents with SLA adherence",
+      "Improved alerting and dashboards",
+      "Performed root cause analysis and post-incident reviews"
+    ],
+    "tech": ["NLP", "Computer Vision", "Python", "Flask"]
+  }
+]
