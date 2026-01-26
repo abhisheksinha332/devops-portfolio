@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Shabash Award – Catalyst",
+    "issuer": "Bosch",
+    "year": "2025",
+    "image": "/appreciationsImg/shabash1.jpg"
+  },
+  {
+    "title": "Shabash Award – Synergic Force",
+    "issuer": "Bosch",
+    "year": "2025",
+    "image": "/appreciationsImg/synergicForce.png"
+  },
+  {
+    "title": "Shabash Award – Rockstar",
+    "issuer": "Bosch",
+    "year": "2025",
+    "image": "/appreciationsImg/rockstar.png"
+  },
+  {
+    "title": "Shabash Award – Agile",
+    "issuer": "Bosch",
+    "year": "2025",
+    "image": "/appreciationsImg/Agile.png"
+  }
+]

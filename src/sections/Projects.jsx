@@ -1,43 +1,7 @@
-import {
-  Box,
-  Container,
-  Typography,
-  Paper,
-  Stack,
-  IconButton
-} from "@mui/material";
+import {Box,Container,Typography,Paper,Stack} from "@mui/material";
 
 import { motion } from "framer-motion";
-
-const myProjects = [
-  {
-    title: "CI/CD Orchestrator",
-    points: [
-      "Azure DevOps | AWS CodePipeline",
-      "YAML | PowerShell"
-    ],
-    impact: "Reduced Deployment Time by 60%",
-    color: "#3B82F6"
-  },
-  {
-    title: "Secure Access Platform",
-    points: [
-      "Azure AD | AWS IAM | Key Vault",
-      "RBAC | Conditional Access"
-    ],
-    impact: "Improved Security Compliance",
-    color: "#10B981"
-  },
-  {
-    title: "Cost Optimization Framework",
-    points: [
-      "Terraform | Azure Policies",
-      "AWS Cost Explorer"
-    ],
-    impact: "Saved 30% on Cloud Spend",
-    color: "#6366F1"
-  }
-];
+import myProjects from "../components/Data/myProjects.json";
 
 const Projects = () => {
   return (

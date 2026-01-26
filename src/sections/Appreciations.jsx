@@ -7,33 +7,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 
+import appreciations from "../components/Data/appreciations.json";
 
-const data = [
-  {
-    title: "Shabash Award – Catalyst",
-    issuer: "Bosch",
-    year: "2025",
-    image: "/appreciationsImg/shabash1.jpg"
-  },
-  {
-    title: "Shabash Award – Synergic Force",
-    issuer: "Bosch",
-    year: "2025",
-    image: "/appreciationsImg/synergicForce.png"
-  },
-  {
-    title: "Shabash Award – Rockstar",
-    issuer: "Bosch",
-    year: "2025",
-    image: "/appreciationsImg/rockstar.png"
-  },
-  {
-    title: "Shabash Award – Agile",
-    issuer: "Bosch",
-    year: "2025",
-    image: "/appreciationsImg/Agile.png"
-  }
-];
+
 
 export default function Appreciation() {
   const theme = useTheme();
@@ -42,9 +18,9 @@ export default function Appreciation() {
 
 
   const slides = [
-    ...data.slice(-slidesPerView),
-    ...data,
-    ...data.slice(0, slidesPerView)
+    ...appreciations.slice(-slidesPerView),
+    ...appreciations,
+    ...appreciations.slice(0, slidesPerView)
   ];
 
   const [index, setIndex] = useState(slidesPerView);
@@ -52,7 +28,7 @@ export default function Appreciation() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
 
-  const total = data.length;
+  const total = appreciations.length;
 
   const handleNext = () => {
     setAnimate(true);
@@ -82,7 +58,7 @@ export default function Appreciation() {
   }, [index, slidesPerView, total]);
 
   const activeItem =
-    data[(index - slidesPerView + total) % total];
+    appreciations[(index - slidesPerView + total) % total];
 
     // console.log("Active Item:", activeItem);
     // console.log("Index:", index);
