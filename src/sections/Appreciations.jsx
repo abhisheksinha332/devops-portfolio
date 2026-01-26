@@ -13,25 +13,25 @@ const data = [
     title: "Shabash Award – Catalyst",
     issuer: "Bosch",
     year: "2025",
-    image: "../../../public/appreciationsImg/shabash1.jpg"
+    image: "/appreciationsImg/shabash1.jpg"
   },
   {
     title: "Shabash Award – Synergic Force",
     issuer: "Bosch",
     year: "2025",
-    image: "../../../public/appreciationsImg/synergicForce.png"
+    image: "/appreciationsImg/synergicForce.png"
   },
   {
     title: "Shabash Award – Rockstar",
     issuer: "Bosch",
     year: "2025",
-    image: "../../../public/appreciationsImg/rockstar.png"
+    image: "/appreciationsImg/rockstar.png"
   },
   {
     title: "Shabash Award – Agile",
     issuer: "Bosch",
     year: "2025",
-    image: "../../../public/appreciationsImg/Agile.png"
+    image: "/appreciationsImg/Agile.png"
   }
 ];
 

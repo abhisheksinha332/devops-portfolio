@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect, useRef } from "react";
-import { Box, Container ,Typography, Divider,   Paper, Grid, TextField, Button } from "@mui/material";
+import { Box, Container ,Typography,   Paper, Grid, TextField, Button } from "@mui/material";
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -9,7 +9,9 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import emailjs from '@emailjs/browser';
-import { color } from 'framer-motion';
+
+import {inputStyle} from "../components/inputStyle"
+
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -52,7 +54,7 @@ const ContactPage = () => {
             )
               .then(
                 () => {
-                  console.log('SUCCESS!');
+                //   console.log('SUCCESS!');
                   setOpen(true);
                 },
                 (error) => {
@@ -128,15 +130,10 @@ const ContactPage = () => {
                     </DialogContent>
                     <DialogActions>
                     <Button onClick={handleClose}>Close</Button>
-
                     </DialogActions>
-      </Dialog>
+                </Dialog>
                 </Box>
-                
-               
-
             </Grid>
-
             </Grid>
             </Paper>
             </Container>
@@ -146,32 +143,3 @@ const ContactPage = () => {
 
 export default ContactPage;
 
-const inputStyle = {
-  backgroundColor: "#020617",
-  borderRadius: 1,
-
-  "& .MuiInputBase-input": {
-    color: "#F1F5F9"
-  },
-
-  "& .MuiInputLabel-root": {
-    color: "#94A3B8"
-  },
-
-  "& .MuiOutlinedInput-notchedOutline": {
-    borderColor: "rgba(148,163,184,0.25)"
-  },
-
-  "&:hover .MuiOutlinedInput-notchedOutline": {
-    borderColor: "#38BDF8"
-  },
-
-  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-    borderColor: "#38BDF8"
-  },
-
-  "& .MuiInputLabel-root.Mui-focused": {
-    color: "#38BDF8"
-  },
- 
-};

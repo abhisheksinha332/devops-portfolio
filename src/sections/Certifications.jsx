@@ -9,7 +9,7 @@ const myCertifications = [
   {
     title: "AZ-900: Microsoft Certified: Azure Fundamentals",
     points: ["Cloud Concepts", "Azure architecture and services", "Core solutions and management tools on Azure", "Azure management and governance", "Identity, governance, privacy, and compliance features"],
-    image: "../../../../public/certificationsImg/az900.svg",
+    image: "/certificationsImg/az900.svg",
     
     verifyLink: "https://learn.microsoft.com/api/credentials/share/en-us/AbhishekSinha-7533/687EF3FCE3A235CA?sharingId=2074A778E8588350",
     issuer: "Microsoft",
@@ -19,7 +19,7 @@ const myCertifications = [
   {
     title: "AZ-104: Microsoft Certified: Azure Administrator Associate",
     points: ["Manage Azure identities and governance", "Implement and manage storage", "Deploy and manage Azure compute resources", "Implement and manage virtual networking", "Monitor and maintain Azure resources"],
-    image: "../../../../public/certificationsImg/az104.svg",
+    image: "/certificationsImg/az104.svg",
     verifyLink: "https://learn.microsoft.com/api/credentials/share/en-us/AbhishekSinha-7533/126A802988A6FC53?sharingId=2074A778E8588350",
     issuer: "Microsoft",
     year: "2025",
