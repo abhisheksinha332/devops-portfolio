@@ -1,19 +1,16 @@
 import { Box, Container, Typography, Paper, Stack } from "@mui/material";
 import { motion as Motion } from "framer-motion";
 import {
-  SiMicrosoftazure,
-  SiAmazonaws,
-  SiAzuredevops,
   SiTerraform,
   SiDocker,
   SiKubernetes,
-  SiPowershell,
   SiPython,
   SiReact,
   SiNginx,
   SiGithub,
   SiMongodb
 } from "react-icons/si";
+import { FaMicrosoft, FaAws, FaDev, FaPowerOff } from 'react-icons/fa';
 import skillsJson from "../components/Data/skills.json";
 
 // Use JSON directly as SKILLS; JSON now contains 6 cards with badge/color/icon
@@ -22,13 +19,13 @@ const SKILLS = skillsJson;
 const HIGHLIGHT = new Set(["Azure DevOps", "Terraform", "Microsoft Azure", "Docker", "PowerShell"]);
 
 const ICON_MAP = {
-  azure: SiMicrosoftazure,
-  aws: SiAmazonaws,
-  "azure-devops": SiAzuredevops,
+  azure: FaMicrosoft,
+  aws: FaAws,
+  "azure-devops": FaDev,
   terraform: SiTerraform,
   docker: SiDocker,
   kubernetes: SiKubernetes,
-  powershell: SiPowershell,
+  powershell: FaPowerOff,
   python: SiPython,
   react: SiReact,
   nginx: SiNginx,
