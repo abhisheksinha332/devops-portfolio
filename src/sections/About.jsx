@@ -48,13 +48,12 @@ const About = () => {
                   maxWidth: 520
                 }}
               >
-                I am a DevOps Engineer with 3.5 years of IT experience, including 2.5 years in DevOps and 1 year in Monitoring & Incident Management. I have worked closely with the Microsoft team, supporting the Renault–Nissan Alliance (RNA) on the Microsoft Connected Vehicle Platform (MCVP).
+                I am a DevOps Engineer with 4 years of experience in Azure cloud automation, CI/CD pipelines, Infrastructure as Code (Terraform, ARM, Bicep), and production support. I have worked with Microsoft teams supporting the Renault–Nissan Alliance (RNA) on the Microsoft Connected Vehicle Platform (MCVP).
                 <br /><br />
-                My expertise includes CI/CD pipelines using Azure DevOps and GitHub Actions, cloud infrastructure on Azure and AWS, and automation with IaC tools like Terraform and ARM templates. I have hands-on experience with Docker, Kubernetes, and monitoring tools such as Prometheus, Grafana, and Azure Monitor.
+                My expertise includes Azure DevOps, GitHub Actions, Azure Automation, Azure Key Vault, PowerShell, Docker, Nginx, AWS, and Terraform. I have delivered automation solutions that reduced manual effort by 60%, improved deployment reliability, and contributed to 100% SLA fulfillment.
                 <br /><br />
-                I am passionate about building secure, scalable, and automated cloud platforms for enterprise environments.
-              </Typography>
-         
+                I am passionate about building secure, scalable, and automated cloud platforms while continuously improving operational efficiency through DevOps and cloud engineering best practices.
+         </Typography>
             </Box>
           </Grid>
      

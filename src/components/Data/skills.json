@@ -1,22 +1,44 @@
 [
   {
     "title": "Cloud Platforms",
-    "items": ["Azure", "AWS"]
+    "items": ["Microsoft Azure", "AWS"],
+    "badge": "Multi-Cloud",
+    "color": "#6366F1",
+    "icon": "azure"
   },
   {
-    "title": "CI/CD & DevOps",
-    "items": ["Azure DevOps", "GitHub Actions", "YAML Pipelines"]
+    "title": "DevOps & CI/CD",
+    "items": ["Azure DevOps", "GitHub Actions", "CI/CD Pipelines", "YAML"],
+    "badge": "Enterprise CI/CD",
+    "color": "#38BDF8",
+    "icon": "azure-devops"
   },
   {
-    "title": "Containers",
-    "items": ["Docker", "Kubernetes", "Service Fabric"]
+    "title": "Infrastructure as Code",
+    "items": ["Terraform", "ARM Templates", "Bicep"],
+    "badge": "Infrastructure as Code",
+    "color": "#06B6D4",
+    "icon": "terraform"
   },
   {
-    "title": "Infra as Code",
-    "items": ["Terraform", "ARM Templates", "Bicep"]
+    "title": "Containers & Platform Engineering",
+    "items": ["Docker", "Kubernetes", "Nginx"],
+    "badge": "Containerized Deployments",
+    "color": "#06B6D4",
+    "icon": "docker"
   },
   {
-    "title": "Monitoring",
-    "items": ["Azure Monitor", "Prometheus", "Grafana"]
+    "title": "Automation & Observability",
+    "items": ["PowerShell", "Azure Automation", "Power Automate", "Azure Monitor", "Log Analytics", "Azure Functions"],
+    "badge": "100% SLA Fulfillment",
+    "color": "#F59E0B",
+    "icon": "powershell"
+  },
+  {
+    "title": "Development & APIs",
+    "items": ["Python", "React.js", "REST APIs", "Swagger/OpenAPI", "SQL"],
+    "badge": "Full Stack & APIs",
+    "color": "#10B981",
+    "icon": "python"
   }
 ]

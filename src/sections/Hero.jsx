@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Button, Stack, Grid } from "@mui/material";
-import resume from "../assets/Abhishek Sinha Resume.pdf";
+import resume from "../assets/Abhishek_Sinha_DevOps.pdf";
 import devopsImg from "../assets/devops.png";
 
 export default function Hero() {
