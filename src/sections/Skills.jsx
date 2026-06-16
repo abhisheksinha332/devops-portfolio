@@ -120,19 +120,22 @@ export default function Skills() {
                         <Box key={it} sx={{ display: "inline-flex", alignItems: "center", gap: 1, px: 1.5, py: 0.6, borderRadius: 2, background: "rgba(30,41,59,0.8)", color: "#CBD5E1", border: "1px solid rgba(51,65,85,0.8)", fontSize: "0.85rem", fontWeight: 500 }}>
                           <Box sx={{ width: 16, height: 16, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginRight: '6px' }}>
                             {(() => {
-                              const key = it.toLowerCase();
+                              // Use ICON_MAP heuristics: prefer a mapping by explicit card.icon when possible,
+                              // otherwise attempt simple keyword matches to existing ICON_MAP keys.
+                              const lower = it.toLowerCase();
                               let Icon = null;
-                              if (key.includes('azure')) Icon = SiMicrosoftazure;
-                              else if (key.includes('aws')) Icon = SiAmazonaws;
-                              else if (key.includes('azure devops') || key.includes('devops')) Icon = SiAzuredevops;
-                              else if (key.includes('terraform')) Icon = SiTerraform;
-                              else if (key.includes('docker')) Icon = SiDocker;
-                              else if (key.includes('kubernet') || key.includes('k8s')) Icon = SiKubernetes;
-                              else if (key.includes('powershell') || key.includes('power')) Icon = SiPowershell;
-                              else if (key.includes('python')) Icon = SiPython;
-                              else if (key.includes('react')) Icon = SiReact;
-                              else if (key.includes('nginx')) Icon = SiNginx;
-                              else if (key.includes('github') || key.includes('git')) Icon = SiGithub;
+                              // direct keyword matches to ICON_MAP keys
+                              if (lower.includes('azure')) Icon = ICON_MAP.azure;
+                              else if (lower.includes('aws')) Icon = ICON_MAP.aws;
+                              else if (lower.includes('azure devops') || lower.includes('devops')) Icon = ICON_MAP['azure-devops'];
+                              else if (lower.includes('terraform')) Icon = ICON_MAP.terraform;
+                              else if (lower.includes('docker')) Icon = ICON_MAP.docker;
+                              else if (lower.includes('kubernet') || lower.includes('k8s')) Icon = ICON_MAP.kubernetes;
+                              else if (lower.includes('powershell') || lower.includes('power')) Icon = ICON_MAP.powershell;
+                              else if (lower.includes('python')) Icon = ICON_MAP.python;
+                              else if (lower.includes('react')) Icon = ICON_MAP.react;
+                              else if (lower.includes('nginx')) Icon = ICON_MAP.nginx;
+                              else if (lower.includes('github') || lower.includes('git')) Icon = ICON_MAP.github;
                               return Icon ? <Icon size={14} color={card.color} /> : <span style={{ width: 8, height: 8, borderRadius: 6, background: card.color, display: 'inline-block' }} />;
                             })()}
                           </Box>
