@@ -1,36 +1,88 @@
 [
-  {
-    "role": "DevOps Engineer",
-    "company": "Bosch",
-    "duration": "2023 – Present",
-    "description": [
-      "Designed and maintained CI/CD pipelines using Azure DevOps and GitHub Actions",
-      "Automated cloud infrastructure using Terraform and ARM templates",
-      "Implemented monitoring with Azure Monitor, Prometheus, and Grafana",
-      "Collaborated with Microsoft team for Renault–Nissan Alliance (MCVP)"
-    ],
-    "tech": ["Azure", "AWS", "Terraform", "Docker", "Kubernetes"]
-  },
-  {
-    "role": "Monitoring & Incident Engineer",
-    "company": "Bosch",
-    "duration": "2022 – 2023",
-    "description": [
-      "Handled production incidents with SLA adherence",
-      "Improved alerting and dashboards",
-      "Performed root cause analysis and post-incident reviews"
-    ],
-    "tech": ["Azure Monitor", "Azure Function", "Azure Automation Account"]
-  },
-  {
-    "role": "IoT Developer Intern",
-    "company": "Bosch",
-    "duration": "2022",
-    "description": [
-      "Handled production incidents with SLA adherence",
-      "Improved alerting and dashboards",
-      "Performed root cause analysis and post-incident reviews"
-    ],
-    "tech": ["NLP", "Computer Vision", "Python", "Flask"]
-  }
+{
+"role": "DevOps Engineer & Full Stack Developer",
+"company": "Bosch Global Software Technologies",
+"duration": "Nov 2025 – Present",
+"description": [
+"Engineered and maintained CI/CD pipelines using GitHub Actions for automated build, test, and deployment workflows",
+"Managed cloud infrastructure using Terraform (IaC) across Azure environments",
+"Designed Docker-based deployments and configured Nginx reverse proxies for secure application delivery",
+"Provisioned AWS RDS and integrated backend services through AWS API Gateway",
+"Contributed to full-stack development using React.js and Python while supporting DevOps operations"
+],
+"tech": [
+"Azure",
+"AWS",
+"Terraform",
+"GitHub Actions",
+"Docker",
+"Nginx",
+"React",
+"Python",
+"API Gateway",
+"AWS RDS"
+]
+},
+{
+"role": "DevOps Engineer",
+"company": "Bosch Global Software Technologies",
+"duration": "Jun 2023 – Oct 2025",
+"description": [
+"Automated certificate lifecycle management using Azure DevOps and Azure Key Vault, reducing manual effort by 60%",
+"Led major releases and high-frequency change deployments with >99% deployment success rate",
+"Developed automation solutions using PowerShell and Azure DevOps to improve operational efficiency",
+"Automated Azure AD access provisioning and governance through Azure DevOps pipelines",
+"Supported production-critical incidents and collaborated with Renault-Nissan Alliance (RNA) stakeholders"
+],
+"tech": [
+"Azure DevOps",
+"Azure Key Vault",
+"PowerShell",
+"ARM Templates",
+"Bicep",
+"Azure AD",
+"CI/CD",
+"Release Management"
+]
+},
+{
+"role": "Monitoring & Incident Management Engineer",
+"company": "Bosch Global Software Technologies",
+"duration": "Sep 2022 – May 2023",
+"description": [
+"Developed automation solutions using PowerShell, Azure Automation, and Power Automate contributing to 100% SLA fulfillment",
+"Automated incident triaging, work item creation, and certificate lifecycle processes",
+"Enhanced observability using Azure Monitor, Log Analytics, and Azure Function-based alerting",
+"Designed and maintained Azure Automation Runbooks for operational workflows",
+"Created Power BI dashboards for SLA tracking and operational reporting"
+],
+"tech": [
+"Azure Monitor",
+"Log Analytics",
+"Azure Functions",
+"Azure Automation",
+"PowerShell",
+"Power Automate",
+"Power BI",
+"Azure DevOps"
+]
+},
+{
+"role": "IoT Developer Intern",
+"company": "Bosch Global Software Technologies",
+"duration": "Feb 2022 – May 2022",
+"description": [
+"Contributed to the planning and design of a Smart Mirror project",
+"Used Flask to visualize outputs and validate application logic",
+"Integrated Natural Language Processing (NLP) and Computer Vision capabilities",
+"Developed voice and gesture-based interaction features for real-time user feedback"
+],
+"tech": [
+"Python",
+"Flask",
+"NLP",
+"Computer Vision",
+"OpenCV"
+]
+}
 ]
